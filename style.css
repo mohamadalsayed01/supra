@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;  
+}
+
+body {
+    background: linear-gradient(#111,#222);
+}
+.body-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://www.toyota.com/imgix/content/dam/toyota/jellies/max/2023/grsupra/a91-mt/2387/d12/2.png?fm=webp&amp;&amp;w=768&amp;h=328&amp;q=90");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size:50%;  
+}
+
+.container {
+    width: 100%;
+}
+
+.content-container{
+    width: 100%;
+    height: 90vh;
+    margin: auto;  
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 87%;
+    margin: auto;
+    padding: 27px 0 0;
+}
+nav .logo{
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 19px;
+   font-weight: 500;
+}
+nav ul li a:hover{
+    color: rgb(255, 0, 0);
+    font-size: 20px
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    width: 87%;
+    margin: auto;
+}
+.content .text{
+    color: #fff;
+    
+}
+.content .text h2{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.G,.R{
+    padding: 2px;
+    color: #fff;
+}
+.G{
+    background-color: black;
+}
+.R{
+    background-color: red;
+}
+
+
+.content .text .details{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 25px 0;
+    letter-spacing: 1px;
+}
+.content .text .mark{
+    padding: 2px;
+    background-color: red;
+    color: #fff;
+
+}
+@media (max-width:1200px) and (min-width:1100px){
+    .body-container{
+        background-size:45%;
+    }
+}
+
+@media (max-width:1099px) and (min-width:1000px){
+    .body-container{
+        background-size:40%;
+    }
+}
+
+@media (max-width:999px) and (min-width:800px){
+    .body-container{
+        background-size:37%;
+    }
+}
+
+@media (max-width:799px) and (min-width:700px){
+    .body-container{
+        background-size:35%;
+    }
+    .content .text .details{
+        font-size: 16px;
+        line-height: 20px;
+        margin: 20px 0;
+        letter-spacing: 1px;
+    }
+    .content .text h2{
+        margin-top: -3px;
+    }
+}
+
+@media (max-width:699px) and (min-width:380px){
+    .body-container{
+        background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url("https://www.toyota.com/imgix/content/dam/toyota/jellies/max/2023/grsupra/a91-mt/2387/d12/2.png?fm=webp&amp;&amp;w=768&amp;h=328&amp;q=90");
+        background-repeat: no-repeat;
+        background-size:100%;
+        background-position: center bottom;
+    }
+    .content .text h2{
+        font-size: 34px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-top: -25px;
+    }
+    .content .text .details{
+        font-size: 18px;
+        line-height: 25px;
+        margin: 22px 0;
+        letter-spacing: 1px;
+    }
+    .nav{
+        width: 90%;
+        margin: auto;
+        padding: 20px 0;
+    } 
+    nav ul li{
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .content .text .mark{
+        padding: 1px;
+        background-color: rgba(255, 0, 0, 0.349);
+        color: #fff;
+    }
+}
